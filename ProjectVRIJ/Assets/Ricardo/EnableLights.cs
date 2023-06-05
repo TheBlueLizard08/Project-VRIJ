@@ -8,13 +8,21 @@ public class EnableLights : MonoBehaviour
 {
     [SerializeField]
     private Light[] lights;
+    [SerializeField]
+    private GameObject Lever;
     // Start is called before the first frame update
     void Start()
     {
         
     }
 
-
+    private void Update()
+    {
+        if(Lever.transform.rotation.z >= 170)
+        {
+            StartCoroutine(LightsOn());
+        }
+    }
     public void StartLights()
     {
         StartCoroutine(LightsOn());
