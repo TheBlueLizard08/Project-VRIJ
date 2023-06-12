@@ -7,6 +7,8 @@ TagManager:
   - CinemachineTarget
   - FxTemporaire
   - projectile
+  - New tag
+  - Lever
   layers:
   - Default
   - TransparentFX

@@ -5,12 +5,13 @@ using UnityEngine;
 public class Trigger : MonoBehaviour
 {
     [SerializeField]
-    private EnableLights light;
+    private GameObject lever;
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Player")
+        if(other.gameObject.tag == "Lever")
         {
-            light.StartLights();
+            lever.SetActive(true);
+            Destroy(other.gameObject);
         }
     }
 }
