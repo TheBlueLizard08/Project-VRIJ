@@ -18,8 +18,8 @@ public class EnableLights : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(Lever.transform.rotation.z);
-        if (Lever.transform.rotation.z >= 0.99)
+        Debug.Log(Lever.transform.rotation.x);
+        if (Lever.transform.rotation.x >= 0.2)
         {
             Debug.Log("turning on");
             StartCoroutine(LightsOn());
