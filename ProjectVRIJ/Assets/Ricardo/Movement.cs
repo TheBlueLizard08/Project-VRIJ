@@ -19,6 +19,7 @@ public class Movement : ControllerInput
     private int speed = 6;
     [SerializeField]
     private Transform Head;
+    
 
 
     // Start is called before the first frame update
